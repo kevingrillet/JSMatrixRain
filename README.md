@@ -1,4 +1,5 @@
 # JSMatrixRain
+MatrixRain implementation in JavaScript.
 
 ## Usage ##
 
