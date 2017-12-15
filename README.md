@@ -1,6 +1,12 @@
 # JSMatrixRain
 
-# Usage #
+## Usage ##
+
+#### HTML ####
+```
+<script type="text/javascript" src="matrixRain.js"></script>
+```
+#### JavaScript ####
 ```
 var init = function(){
   cMatrixRain.width = window.innerWidth;
@@ -14,6 +20,11 @@ var init = function(){
 };
 window.addEventListener('load', function() { init(); });
 window.addEventListener('resize', function() { init(); });
+```
+
+#### CSS ####
+```
+@font-face{font-family: 'MatrixCode'; src: url(matrix_code_nfi.otf);}
 ```
 
 ## TODO ##
