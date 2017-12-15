@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>JS Matrix Rain</title>
+	<meta name="description" content="JS Matrix Rain demo">
+	<meta name="author" content="Kévin GRILLET">
+	<style type="text/css">
+		*{margin: 0; padding: 0; overflow: hidden; background: black;}
+		/*http://www.dafont.com/fr/matrix-code-nfi.font*/
+		@font-face{font-family: 'MatrixCode'; src: url(matrix_code_nfi.otf);}
+	</style>
+</head>
+<body>
+	<canvas id="cMatrixRain"></canvas>
+	<script type="text/javascript" src="matrixRain.js"></script>
+	<script type="text/javascript">
+		var init = function(){
+			cMatrixRain.width = window.innerWidth;
+			cMatrixRain.height = window.innerHeight;
+			matrixRain.init(
+				'cMatrixRain', //idCanvas
+				15, //FontSize
+				30, //fps (optional)
+				0.975 //rnd (optional)
+			);
+		};
+		window.addEventListener('load', function() { init(); });
+		window.addEventListener('resize', function() { init(); });
+	</script>
+</body>
+</html>
