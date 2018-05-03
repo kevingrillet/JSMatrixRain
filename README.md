@@ -27,7 +27,3 @@ window.addEventListener('resize', function() { init(); });
 ```
 @font-face{font-family: 'MatrixCode'; src: url(matrix_code_nfi.otf);}
 ```
-
-## TODO ##
-* colors
-* auto resize
